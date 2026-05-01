@@ -21,7 +21,7 @@ test(
     const rowsAfter = await page.locator('table tbody tr').count();
     expect(rowsAfter).toBeGreaterThan(rowsBefore);
 
-    await page.screenshot({ path: 'test-results/inventory-loaded.png', fullPage: true });
+    await page.screenshot({ path: 'screenshots/inventory-loaded.png', fullPage: true });
   }
 );
 
